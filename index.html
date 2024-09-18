@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple PHP Calculator</title>
+</head>
+<body>
+     <h2>Simple PHP Calculator</h2>
+    <form action="process.php" method="post">
+        <label>Enter First Number:</label><br>
+        <input type="number" name="num1" step="any" required><br><br>
+        
+        <label>Enter Second Number:</label><br>
+        <input type="number" name="num2" step="any" required><br><br>
+
+        <label>Select Operation:</label><br>
+        <select name="operator">
+            <option value="+">Addition (+)</option>
+            <option value="-">Subtraction (-)</option>
+            <option value="*">Multiplication (*)</option>
+            <option value="/">Division (/)</option>
+            <option value="**">Exponent (^)</option>
+            <option value="sqrt">Square Root (√)</option>
+        </select><br><br>
+
+        <input type="submit" name="submit" value="Calculate">
+    </form>
+    <h2>Multiplication Form</h2>
+    <form action="multiplication_table.php" method="post">
+    Enter a number: <input type="number" name="number" required>
+    <input type="submit" value="Display Table">
+</form>
+
+</body>
+</html>
